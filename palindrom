@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n,sum=0,temp,p;
+    cin>>n;
+    temp=n;
+    while(n>0)
+    {
+        p=n%10;
+        sum=sum*10+p;
+        n/=10;
+    }
+    if(sum==temp)
+    {
+        cout<<"palindrom number";
+        
+    }
+    else
+    {
+        cout<<"not palindrom";
+    }
+
+    return 0;
+}
+
